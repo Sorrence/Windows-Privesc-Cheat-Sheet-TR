@@ -142,8 +142,7 @@ Burada görüldüğü üzere executable BINARY_PATH_NAME parametresinde, onu ça
 
 Hizmetler, kimin hizmeti başlatma, durdurma, duraklatma, durumu sorgulama, yapılandırmayı sorgulama veya yeniden yapılandırma gibi ayrıcalıklara sahip olduğunu belirten İsteğe Bağlı Erişim Kontrol Listesi'ne (DACL) sahiptir. DACL, Process Hacker'dan (bilgisayarınızın masaüstünde mevcuttur) görülebilir:
 
-### Service Executable'da Güvenli Olmayan İzinlerBuradan sonra BITS servisi RogueWinRM’in açtığı sahte WinRM servisine bağlanır; RogueWinRM gelen SSPI/NTLM oturumunu AcceptSecurityContext ile kabul edip server tarafında bir security context oluşturur, sonra ImpersonateSecurityContext ile o context üzerinden impersonation yapar — işletim sistemi bu bağlam için bir security token verir ve bu token duplicate edilip (DuplicateTokenEx) CreateProcessWithTokenW ile SYSTEM bağlamında process başlatılabilir.
-
+### Service Executable'da Güvenli Olmayan İzinler
 ```
 sc qc WindowsScheduler
 ```

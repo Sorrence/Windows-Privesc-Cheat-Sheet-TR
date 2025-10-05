@@ -390,10 +390,9 @@ nt authority\system
 ### SeImpersonate / SeAssignPrimaryToken
 
 Impersonation, bir kullanıcı adına process veya thread başlatabilme yetkisidir. Bunu bir FTP server örneği ile anlayabiliriz
-
-![[6e5768172fbb97d6777dde7e15a3fcfc.png]]
+<img width="920" height="400" alt="6e5768172fbb97d6777dde7e15a3fcfc" src="https://github.com/user-attachments/assets/6d5f66b0-8315-404b-b9f4-6c21131658b0" />
 FTP userının tokeni kullanarak bu dosyalara erişmek güvenli bir yöntem değil. Bu nedenle ftp server'ın kullanıcıyı impersonate etmesi gerekir.
-![[89e74e14454edc10fa2bd541ac359772.png]]
+<img width="920" height="400" alt="89e74e14454edc10fa2bd541ac359772" src="https://github.com/user-attachments/assets/2be86ad1-628a-4518-9fd6-1a00344576f8" />
 Saldırganın yetki yükseltmesi için aşağıdaki adımları takip etmesi gerekir:
 
 1. Kullanıcıların bağlanıp bağlanıp oturum açabileceği bir process oluşturmak.

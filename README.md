@@ -1,4 +1,6 @@
 # [TR] Windows-Privesc-Cheat-Sheet
+> Not: Bu döküman, TryHackMe'nin [Windows Privilege Escalation](https://tryhackme.com/room/windowsprivesc20) odasında aldığım notlardır.
+
 
 ## Parolalar
 ### Katılımsız Windows Kurulumları

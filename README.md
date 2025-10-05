@@ -1,0 +1,1 @@
+# -TR-Windows-Privesc-Cheat-Sheet
